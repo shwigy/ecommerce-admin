@@ -1,16 +1,33 @@
-# React + Vite
+# TechCache Admin Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React SPA for managing a retail computer components catalog. Built with Vite, React Router, and a simulated backend (`json-server`).
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Home** (`/`) — landing page.
+- **Shop** (`/shop`) — searchable, filterable product grid.
+- **Product Detail** (`/shop/:id`) — view a product, edit price/stock as admin (PATCH).
+- **Admin Portal** (`/admin`) — form to add a new component (POST).
 
-## React Compiler
+## Concepts Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+`react-router-dom` routing/navigation, `useState`, `useContext` (`ProductContext`), `useRef` (search focus), `useId` (form labels), a custom `useProducts` hook wrapping GET/POST/PATCH, and Vitest + React Testing Library tests.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev:all   # starts json-server (:3001) and Vite (:5173) together
+```
+
+Or separately: `npm run server` and `npm run dev`.
+
+## Testing
+
+```bash
+npm test
+```
+
+## Data
+
+Sample data lives in `db.json` at the project root, served by `json-server`. Edits made via the Admin Portal persist for the life of the `json-server` process.
