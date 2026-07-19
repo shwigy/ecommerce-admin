@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Vortex X1 GPU",
+      "category": "Graphics Card",
+      "brand": "Vortex",
+      "price": 799.99,
+      "stock": 12,
+      "description": "16GB GDDR6X graphics card built for 4K gaming and creative workloads."
+    },
+    {
+      "id": 2,
+      "name": "Core Prime 9700",
+      "category": "Processor",
+      "brand": "Coretek",
+      "price": 429.5,
+      "stock": 25,
+      "description": "8-core, 16-thread desktop processor with a 5.4GHz boost clock."
+    },
+    {
+      "id": 3,
+      "name": "SpeedRAM 32GB Kit",
+      "category": "Memory",
+      "brand": "SpeedRAM",
+      "price": 129.99,
+      "stock": 40,
+      "description": "32GB (2x16GB) DDR5 6000MHz low-latency memory kit."
+    },
+    {
+      "id": 4,
+      "name": "NitroDrive 2TB NVMe",
+      "category": "Storage",
+      "brand": "NitroDrive",
+      "price": 149.0,
+      "stock": 30,
+      "description": "PCIe 4.0 NVMe SSD with read speeds up to 7300MB/s."
+    },
+    {
+      "id": 5,
+      "name": "Foundation Z790 Board",
+      "category": "Motherboard",
+      "brand": "Foundation",
+      "price": 259.99,
+      "stock": 15,
+      "description": "ATX motherboard with Wi-Fi 6E, DDR5 support, and PCIe 5.0."
+    },
+    {
+      "id": 6,
+      "name": "SteadyFlow 850W PSU",
+      "category": "Power Supply",
+      "brand": "SteadyFlow",
+      "price": 119.99,
+      "stock": 22,
+      "description": "80+ Gold fully modular power supply with silent fan operation."
+    },
+    {
+      "id": 7,
+      "name": "GlacierLoop 240 AIO",
+      "category": "Cooling",
+      "brand": "GlacierLoop",
+      "price": 89.99,
+      "stock": 18,
+      "description": "240mm liquid CPU cooler with ARGB fans and pump."
+    },
+    {
+      "id": 8,
+      "name": "Sentinel Tower Case",
+      "category": "Case",
+      "brand": "Sentinel",
+      "price": 99.5,
+      "stock": 10,
+      "description": "Mid-tower ATX case with tempered glass side panel and mesh front."
+    }
+  ]
+}
