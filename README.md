@@ -1,7 +1,7 @@
 # BranTech Depot Admin Portal
 
 A React SPA for managing a retail computer components catalog. Built with Vite, React Router, and a simulated backend (`json-server`).
-
+![Project screenshot](image.png)
 ## Features
 
 - **Home** (`/`) — landing page.
