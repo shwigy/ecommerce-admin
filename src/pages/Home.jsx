@@ -4,7 +4,7 @@ function Home() {
   return (
     <section className="hero-section">
       <div className="hero-content">
-        <h1>TechCache Components</h1>
+        <h1>BranTech Depot</h1>
         <p className="hero-subtitle">
           The admin portal for managing our retail computer component catalog.
         </p>
