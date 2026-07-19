@@ -8,7 +8,7 @@ afterEach(() => {
 
 describe('useProducts', () => {
   it('loads products on mount', async () => {
-    global.fetch = vi.fn(() =>
+    globalThis.fetch = vi.fn(() =>
       Promise.resolve({
         ok: true,
         status: 200,
@@ -25,7 +25,7 @@ describe('useProducts', () => {
   })
 
   it('updates a product via PATCH and reflects the change locally', async () => {
-    global.fetch = vi.fn((url, options) => {
+    globalThis.fetch = vi.fn((url, options) => {
       if (options?.method === 'PATCH') {
         return Promise.resolve({
           ok: true,

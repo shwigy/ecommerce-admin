@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useProductContext } from '../context/ProductContext'
+import { useProductContext } from '../hooks/useProductContext'
 import ProductForm from '../components/ProductForm'
 
 function AddProduct() {

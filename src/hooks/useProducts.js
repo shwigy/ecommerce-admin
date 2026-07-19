@@ -20,6 +20,8 @@ export function useProducts() {
   }, [])
 
   useEffect(() => {
+    // Fetching on mount to sync with the mock backend is the intended use of this effect.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     fetchProducts()
   }, [fetchProducts])
 

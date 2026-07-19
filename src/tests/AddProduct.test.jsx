@@ -21,7 +21,7 @@ describe('AddProduct page', () => {
     }
 
     let postBody = null
-    global.fetch = vi.fn((url, options) => {
+    globalThis.fetch = vi.fn((url, options) => {
       if (!options) {
         return Promise.resolve({ ok: true, status: 200, json: () => Promise.resolve([]) })
       }
@@ -45,7 +45,7 @@ describe('AddProduct page', () => {
   })
 
   it('shows a validation error when required fields are missing', async () => {
-    global.fetch = vi.fn(() =>
+    globalThis.fetch = vi.fn(() =>
       Promise.resolve({ ok: true, status: 200, json: () => Promise.resolve([]) }),
     )
 

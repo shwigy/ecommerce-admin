@@ -1,6 +1,6 @@
 import { useId, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { useProductContext } from '../context/ProductContext'
+import { useProductContext } from '../hooks/useProductContext'
 
 function ProductDetail() {
   const { id } = useParams()

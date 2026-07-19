@@ -1,5 +1,5 @@
 import { useMemo, useRef, useState } from 'react'
-import { useProductContext } from '../context/ProductContext'
+import { useProductContext } from '../hooks/useProductContext'
 import ProductCard from '../components/ProductCard'
 import SearchBar from '../components/SearchBar'
 

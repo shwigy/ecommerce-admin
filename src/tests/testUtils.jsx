@@ -1,10 +1,11 @@
 import { render } from '@testing-library/react'
+import { vi } from 'vitest'
 import { MemoryRouter } from 'react-router-dom'
 import { ProductProvider } from '../context/ProductContext'
 
 export function mockFetchSequence(responses) {
   let call = 0
-  global.fetch = vi.fn(() => {
+  globalThis.fetch = vi.fn(() => {
     const response = responses[Math.min(call, responses.length - 1)]
     call += 1
     return Promise.resolve({
